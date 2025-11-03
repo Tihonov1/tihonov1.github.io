@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Вход - Ресторан Усадьба</title>
+</head>
+<body>
+    <div class="auth-container">
+    <div class="card auth-card">
+        <div class="card-header">
+            <div class="icon-wrapper">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M16 2v5h3l-4 5V7h-3l4-5Z"></path>
+                    <path d="M8 2v5h3L7 12V7H4l4-5Z"></path>
+                    <path d="M2 15h20v7H2v-7Z"></path>
+                </svg>
+            </div>
+            <h1 class="card-title">Добро пожаловать в Усадьбу</h1>
+            <p class="card-description">Войдите в систему для работы с POS-терминалом</p>
+        </div>
+
+        <form id="loginForm" class="card-content">
+            <div class="form-group">
+                <label class="label" for="email">Email</label>
+                <input 
+                    class="input" 
+                    type="email" 
+                    id="email" 
+                    placeholder="name@example.com" 
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="password">Пароль</label>
+                <input 
+                    class="input" 
+                    type="password" 
+                    id="password" 
+                    placeholder="••••••••" 
+                    required
+                />
+            </div>
+        </form>
+
+        <div class="card-footer">
+            <button type="submit" form="loginForm" class="button">Войти</button>
+            <p style="margin-top: 16px;">
+                <a href="registr.html" class="link">Нет аккаунта? Зарегистрироваться</a>
+            </p>
+        </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

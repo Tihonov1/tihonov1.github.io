@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Ресторан Усадьба</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+    <div class="card auth-card">
+        <div class="card-header">
+            <div class="icon-wrapper">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M16 2v5h3l-4 5V7h-3l4-5Z"></path>
+                    <path d="M8 2v5h3L7 12V7H4l4-5Z"></path>
+                    <path d="M2 15h20v7H2v-7Z"></path>
+                </svg>
+            </div>
+            <h1 class="card-title">Регистрация сотрудника</h1>
+            <p class="card-description">Создайте аккаунт для работы в ресторане Усадьба</p>
+        </div>
+
+        <form id="registerForm" class="card-content">
+            <div class="form-group">
+                <label class="label" for="name">Имя и фамилия</label>
+                <input 
+                    class="input" 
+                    type="text" 
+                    id="name" 
+                    placeholder="Иван Иванов" 
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="email">Email</label>
+                <input 
+                    class="input" 
+                    type="email" 
+                    id="email" 
+                    placeholder="name@example.com" 
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="role">Должность</label>
+                <select class="select" id="role" required>
+                    <option value="">Выберите должность</option>
+                    <option value="waiter">Официант</option>
+                    <option value="chef">Повар</option>
+                    <option value="manager">Менеджер</option>
+                    <option value="admin">Администратор</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="password">Пароль</label>
+                <input 
+                    class="input" 
+                    type="password" 
+                    id="password" 
+                    placeholder="••••••••" 
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="confirmPassword">Подтвердите пароль</label>
+                <input 
+                    class="input" 
+                    type="password" 
+                    id="confirmPassword" 
+                    placeholder="••••••••" 
+                    required
+                />
+            </div>
+        </form>
+
+        <div class="card-footer">
+            <button type="submit" form="registerForm" class="button">Зарегистрироваться</button>
+            <p style="margin-top: 16px;">
+                <a href="auth.html" class="link">Уже есть аккаунт? Войти</a>
+            </p>
+        </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

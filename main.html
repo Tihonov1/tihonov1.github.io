@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Ресторан Усадьба</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                        <path d="M8 2v5h3l-4 5V7H4l4-5Z"/>
+                        <path d="M16 2v5h3l-4 5V7h-3l4-5Z"/>
+                        <path d="M2 15h20v7H2v-7Z"/>
+                    </svg>
+                </div>
+                <div class="header-title">
+                    <h1>Ресторан Усадьба</h1>
+                    <p>POS система</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="button" id="goKitchen">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                    Кухня
+                </button>
+                <button class="button" id="logoutBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 18a8 8 0 118-8 8 8 0 01-8 8z"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                    Выход из системы
+                </button>
+                <button class="button user-button" id="goProfile">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    Иван Иванов
+                </button>
+            </div>
+        </header>
+    
+        <!-- Main Content -->
+        <div class="main-container">
+            <!-- Menu Section -->
+            <main class="content">
+                <!-- Search -->
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" placeholder="Поиск блюд...">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+    
+                <!-- Categories -->
+                <div class="categories">
+                    <button class="category-btn active">Все</button>
+                    <button class="category-btn">Завтраки</button>
+                    <button class="category-btn">Салаты</button>
+                    <button class="category-btn">Супы</button>
+                    <button class="category-btn">Горячее</button>
+                    <button class="category-btn">Десерты</button>
+                    <button class="category-btn">Напитки</button>
+                </div>
+    
+                <!-- Menu Grid -->
+                <div class="menu-grid">
+                    <!-- Menu Item 1 -->
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=200&fit=crop" alt="Салат Цезарь" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-name">Салат Цезарь</div>
+                            <div class="menu-item-description">Свежий салат с курицей, сыром и соусом</div>
+                            <div class="menu-item-footer">
+                                <div class="menu-item-price">450 ₽</div>
+                                <button class="add-button">Добавить</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Menu Item 2 -->
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=300&h=200&fit=crop" alt="Стейк" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-name">Стейк Рибай</div>
+                            <div class="menu-item-description">Мраморная говядина с овощами</div>
+                            <div class="menu-item-footer">
+                                <div class="menu-item-price">1200 ₽</div>
+                                <button class="add-button">Добавить</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Menu Item 3 -->
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=300&h=200&fit=crop" alt="Паста" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-name">Паста Карбонара</div>
+                            <div class="menu-item-description">Спагетти с беконом и соусом</div>
+                            <div class="menu-item-footer">
+                                <div class="menu-item-price">680 ₽</div>
+                                <button class="add-button">Добавить</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Menu Item 4 -->
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300&h=200&fit=crop" alt="Блины" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-name">Блины с икрой</div>
+                            <div class="menu-item-description">Тонкие блины с красной икрой</div>
+                            <div class="menu-item-footer">
+                                <div class="menu-item-price">890 ₽</div>
+                                <button class="add-button">Добавить</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Menu Item 5 -->
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300&h=200&fit=crop" alt="Пицца" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-name">Пицца Маргарита</div>
+                            <div class="menu-item-description">Классическая итальянская пицца</div>
+                            <div class="menu-item-footer">
+                                <div class="menu-item-price">550 ₽</div>
+                                <button class="add-button">Добавить</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Menu Item 6 -->
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=200&fit=crop" alt="Десерт" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-name">Тирамису</div>
+                            <div class="menu-item-description">Итальянский десерт с кофе</div>
+                            <div class="menu-item-footer">
+                                <div class="menu-item-price">320 ₽</div>
+                                <button class="add-button">Добавить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+    
+            <!-- Order Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <div class="sidebar-title">
+                        <h2>Текущий заказ</h2>
+                        <div class="badge" id="ordersCountBadge">0 позиций</div>
+                    </div>
+                    <input type="text" class="table-input" placeholder="Номер стола...">
+                </div>
+    
+                <div class="sidebar-content" id="ordersList"></div>
+    
+                <div class="sidebar-footer">
+                    <div class="total-row">
+                        <span>Промежуточный итог:</span>
+                        <span id="subtotalValue">0 ₽</span>
+                    </div>
+                    <div class="total-row">
+                        <span>НДС 20%:</span>
+                        <span id="vatValue">0 ₽</span>
+                    </div>
+                    <div class="total-row final">
+                        <span>Итого к оплате:</span>
+                        <span id="totalValue">0 ₽</span>
+                    </div>
+    
+                    <div class="action-buttons">
+                        <div class="button-group">
+                            <button class="button blue">Печать</button>
+                            <button class="button green">Оплата</button>
+                        </div>
+                        <button class="button primary">Отправить на кухню</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль - Ресторан Усадьба</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://github.com/Tihonov1/Pos-Usadba.git">
+    <body>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <button class="back-button" onclick="goBack()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Назад
+        </button>
+        <div class="header-left" style="gap: 12px;">
+            <div class="logo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M8 2v5h3l-4 5V7H4l4-5Z"/>
+                    <path d="M16 2v5h3l-4 5V7h-3l4-5Z"/>
+                    <path d="M2 15h20v7H2v-7Z"/>
+                </svg>
+            </div>
+            <div class="header-title">
+                <h1>Ресторан Усадьба</h1>
+                <p>POS-система</p>
+            </div>
+        </div>
+        <div style="width: 80px;"></div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Profile Info Card -->
+        <div class="card profile-card">
+            <div class="profile-row">
+                <div class="profile-left">
+                    <div class="avatar" id="avatarInitials">ИИ</div>
+                    <div>
+                        <div class="profile-name-row">
+                            <h2 id="userName">Иван Иванов</h2>
+                            <span class="badge" id="userRoleBadge">Официант</span>
+                        </div>
+                        <div class="profile-meta-row">
+                            <div class="meta-item">
+                                <span class="dot"></span>
+                                <span id="userEmail">ivan.ivanov@usadba.ru</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="dot"></span>
+                                <span>Работает с июля 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="dot"></span>
+                                <span>ID: EMP-10245</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="dot"></span>
+                                <span>График: 5/2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <svg class="stat-icon" style="stroke: #ea580c;" viewBox="0 0 24 24">
+                        <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                    <span class="stat-change">+12%</span>
+                </div>
+                <p class="stat-label">Обработано заказов</p>
+                <p class="stat-value">248</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <svg class="stat-icon" style="stroke: #f43f5e;" viewBox="0 0 24 24">
+                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                    <span class="stat-change">+8%</span>
+                </div>
+                <p class="stat-label">Общая сумма</p>
+                <p class="stat-value">₽ 458,320</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <svg class="stat-icon" style="stroke: #f59e0b;" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span class="stat-change">+5%</span>
+                </div>
+                <p class="stat-label">Рабочих часов</p>
+                <p class="stat-value">156</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <svg class="stat-icon" style="stroke: #f97316;" viewBox="0 0 24 24">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                    <span class="stat-change">+3%</span>
+                </div>
+                <p class="stat-label">Средний чек</p>
+                <p class="stat-value">₽ 1,847</p>
+            </div>
+        </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
